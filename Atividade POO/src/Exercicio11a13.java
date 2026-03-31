@@ -13,7 +13,6 @@ public class Exercicio11a13 {
          */
 
 
-
         System.out.println("------------------------- Exercicio 11 (RESPONDIDO / COMENTARIOS-------------------------");
         int a = 10;
         int b = a;
@@ -50,5 +49,24 @@ public class Exercicio11a13 {
             no caso dos "CARROS" o c1 e c2 guardao o enderenc,  fazendo REFERENCIA a memoria HEAP
             como os 2 fazem referencia ao mesmo endereço, mudando 1 muda o outro.
          */
+
+
+        System.out.println("------------------------- Exercicio 13 (RESPONDIDO / COMENTARIOS-------------------------");
+
+
+        Carro meuCarro = new Carro("VW", "Gol", 2015);
+        trocarModelo(meuCarro);
+        System.out.println(meuCarro.getModelo());
+
     }
+
+    public static void trocarModelo(Carro c) {
+        c.setModelo("Fusca");
+    }
+
+    /*
+    a) - Foi impresso Fusca
+    b) "MeuCarro" e "c" referencia para o mesmo objeto, quando passamos o "c.setModelo("Fusca") ele vai la na memoria
+    e altera o valor.
+     */
 }
