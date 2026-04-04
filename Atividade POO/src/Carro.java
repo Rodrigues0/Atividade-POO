@@ -54,7 +54,7 @@
         }
 
         void exibir(){
-            System.out.println("Marca: " + marca + " | Modelo: " + modelo + "| Ano: " + ano);
+            System.out.println("Marca: " + getMarca() + " | Modelo: " + getModelo() + "| Ano: " + getAno());
         }
 
         int idadeCarro(){
